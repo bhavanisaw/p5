@@ -1,0 +1,18 @@
+CREATE DATABASE registration_db;
+
+USE registration_db;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100),
+    password VARCHAR(255)
+);
+
+npm init -y
+
+npm install express mysql2 cors
+node server.js
+USE registration_db;
+
+SELECT * FROM users;
